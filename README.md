@@ -7,7 +7,6 @@ A week 4 project of my Makers LDN developer course. Our goal was to build a webs
 ## User Story 1
 
 ``
-
 As a user 
 So I can see my bookmarks(URLs)
 Show a list of bookmarks
