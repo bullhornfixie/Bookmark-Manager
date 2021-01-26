@@ -14,3 +14,11 @@ Show a list of bookmarks
 
 ## Domain Model 
 ![Github Logo](/resources/Domain_model.png)
+
+## User Story 2
+
+```
+As a time-pressed user 
+So that I can save a website 
+I would like to add the site's address and title to bookmark manager
+```
