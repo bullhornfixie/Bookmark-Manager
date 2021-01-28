@@ -11,6 +11,11 @@ class Bookmark
     result = connection.exec("SELECT * FROM bookmarks")
     result.map { |bookmark| bookmark['url'] }
   end
+
+  def self.create
+
+  
+  end
 end
 
 # Bookmark class access book_mark manager database
