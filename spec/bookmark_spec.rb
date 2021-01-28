@@ -6,9 +6,10 @@ describe Bookmark do
     it 'returns all bookmarks' do
       connection = PG.connect(dbname: 'bookmark_manager_test')
 
-      # tests should always run against an empty database 
+      # tests should always run against an empty test database 
       # inserted test data into empty table in bookmark_manager_test 
-      connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.makersacademy.com');")
+      # truncates(empties) the bookmarks table in the test database before each run
+      connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.makersacademy.com');")
       connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.destroyallsoftware.com');")
       connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.google.com');")
       
