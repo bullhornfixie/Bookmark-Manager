@@ -1,4 +1,7 @@
+ENV['ENVIRONMENT'] = 'test'
+# run database test first, see bookmark.rb for relation.
 ENV['RACK_ENV'] = 'test'
+# run production test next 
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
