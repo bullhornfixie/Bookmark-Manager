@@ -7,3 +7,7 @@ class Bookmark
     result.map { |bookmark| bookmark['url'] }
   end
 end
+
+# Bookmark class access book_mark manager database
+# get all rows from bookmarks table 
+# extract all urls and save to result 
