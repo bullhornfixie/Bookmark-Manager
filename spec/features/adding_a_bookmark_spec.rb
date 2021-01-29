@@ -2,11 +2,11 @@ feature "adding a bookmark" do
   scenario "when on the bookmarks page" do
 
     visit('/bookmarks/new')
-    fill_in("url", with: "https://www.bbc.co.uk")
+    fill_in("url", with: "https://www.vicemag.co.uk")
     click_button("Submit")
 
-    visit('/bookmarks/new')
-    expect(page).to have_content("https://www.bbc.co.uk")
+    visit('/bookmarks')
+    expect(page).to have_content "https://www.vicemag.co.uk"
   end
 end
 
