@@ -21,14 +21,8 @@ class BookmarkManager < Sinatra::Base
 
   # post info contained into form (bookmarks/new) to /bookmarks and re-direct to bookmarks
   post '/bookmarks' do
-    url = params['url'] 
-    connection = PG.connect(dbname: 'bookmark_manager_test') 
-    connection.exec("INSERT INTO bookmarks (url) VALUES('#{url}')")
+    Bookmark.create(url: params[:url])
     redirect '/bookmarks'
-    # get the url from the submitted form data(params)
-    # connect to the database
-    # execute the SQL to insert a new bookmark into database 
-    # redirect to the /bookmarks route defined in app.rb 
   end
 
   run! if app_file == $0
