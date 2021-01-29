@@ -9,10 +9,11 @@ A week 4 project of my Makers LDN developer course. Our goal was to build a webs
 
 ## Database Setup
 
-Connect to `psql` and create the `bookmark_manager` database:
+Ruby is connected to `psql` for database support and 'Tableplus' which is a GUI that enables the developer to edit table data in the following databases.
 
 ```
-CREATE DATABASE bookmark_manager;
+bookmark_manager is used for development 
+bookmark_manager_test is used for testing 
 ```
 
 To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
